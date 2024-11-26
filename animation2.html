@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #FFEB3B;
+            position: relative;
+        }
+
+        /* Falling text */
+        .falling-text {
+            position: absolute;
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            animation: fall 3s linear infinite;
+        }
+
+        /* falling animation */
+        @keyframes fall {
+            0% {
+                top: 0; /* Start at the top */
+        }
+            100% {
+                top: 100%; /* Move to the bottom */
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="falling-text" style="left: 10%;">WOW</div>
+    <div class="falling-text" style="left: 30%;">HAHA</div>
+    <div class="falling-text" style="left: 50%;">YAY</div>
+    <div class="falling-text" style="left: 70%;">FUN</div>
+    <div class="falling-text" style="left: 90%;">LOL</div>
+</body>
+</html>
